@@ -1,0 +1,127 @@
+[{
+        "_id": "5e4282f6760fc439707f8981",
+        "name": "Get Weather details",
+        "description": "Fetches the weather details",
+        "endpoint": "www.https://s3.amazonaws.com/hjgd775sdd/get_weather",
+        "method": "POST",
+        "header": {
+            "param": ["Content-type", "Authorization"],
+            "value": ["application/json", "Bearer skjflinjlkfsfucisckslc.hawpoiqyriqyrfkvmbavakjeuifknaccfskjcubhjskctwewuteuwrgwd.gcdsjcubgusdwdtikjscdgwudidgujk"]
+        },
+        "request": {
+            "param": ["city", "radius"],
+            "value": ["Tokyo", 100]
+        },
+        "response": {
+            "param": ["status", "cod", "temperature", "pressure", "rainfall"],
+            "value": ["success", 200, 34.5, 1.002, "N/A"]
+        },
+        "project": "5e42f5dc48179f3b34ba3978",
+        "user": "5e42e6d3bde83c3f7c6d13e4"
+    },
+    {
+        "_id": "5e428477e653e207283d2907",
+        "name": "Get Weather details by zipcode",
+        "description": "Fetches the weather details by zipcode",
+        "endpoint": "www.https://s3.amazonaws.com/hjgd775sdd/get_weather?zip=${zipcode}",
+        "method": "POST",
+        "header": {
+            "param": ["Content-type", "Authorization"],
+            "value": ["application/json", "Bearer skjflinjlkfsfucisckslc.hawpoiqyriqyrfkvmbavakjeuifknaccfskjcubhjskctwewuteuwrgwd.gcdsjcubgusdwdtikjscdgwudidgujk"]
+        },
+        "request": {
+            "param": ["city", "zip"],
+            "value": ["Tokyo", 324]
+        },
+        "response": {
+            "param": ["status", "cod", "temperature", "pressure", "rainfall"],
+            "value": ["success", 200, 34.5, 1.002, "N/A"]
+        },
+        "project": "5e42f5dc48179f3b34ba3978",
+        "user": "5e42e6d3bde83c3f7c6d13e4"
+    },
+    {
+        "_id": "5e4285ee3c2ef34a48e88512",
+        "name": "Shorten URL",
+        "description": "Shorten any valid long URL",
+        "endpoint": "www.https://netlify.com/hjgd775sdd/shorten_url",
+        "method": "POST",
+        "header": {
+            "param": ["Content-type", "Authorization"],
+            "value": ["application/json", "Bearer skjflinjlkfsfucisckslc.hawpoiqyriqyrfkvmbavakjeuifknaccfskjcubhjskctwewuteuwrgwd.gcdsjcubgusdwdtikjscdgwudidgujk"]
+        },
+        "request": {
+            "param": ["longUrl"],
+            "value": ["https://www.flipkart.com/sumeet-stainless-steel-spill-free-vegetable-grater-storage-container-12-5cm-dia-6-2cm-height-1-ml-utility/p/itmf9ccwhbu8qg2r?pid=CNTF9CAWG4CPGYMB&lid=LSTCNTF9CAWG4CPGYMBPQNFCW&marketplace=FLIPKART&srno=b_1_1&otracker=hp_omu_Deals%2Bof%2Bthe%2BDay_1_3.dealCard.OMU_Deals%2Bof%2Bthe%2BDay_7QGCSA39JVKO_2&otracker1=hp_omu_SECTIONED_neo%2Fmerchandising_Deals%2Bof%2Bthe%2BDay_NA_dealCard_cc_1_NA_view-all_2&fm=neo%2Fmerchandising&iid=en_ET6Y41MSwGIvoeZwGpUrpig1C%2FsnOwjKNEyvQ6RzHN8SN5joCzlCUJsIjk0PdwKruQRrWmOu2LNIctPezOaoZw%3D%3D&ppt=browse&ppn=browse&ssid=ob42z6bzx6i4ei9s1581417892096"]
+        },
+        "response": {
+            "param": ["status", "cod", "shortUrl"],
+            "value": ["success", 200, "https://tinyurl.com/rzu6ojz"]
+        },
+        "project": "5e419d8515067444bcbfd22b",
+        "user": "5e42e6d3bde83c3f7c6d13e4"
+    },
+    {
+        "_id": "5e4286e652f608026422a6d0",
+        "name": "Create task",
+        "description": "Create a new task",
+        "endpoint": "www.https://netlify.com/hjgd775sdd/create_task",
+        "method": "POST",
+        "header": {
+            "param": ["Content-type", "Authorization"],
+            "value": ["application/json", "Bearer skjflinjlkfsfucisckslc.hawpoiqyriqyrfkvmbavakjeuifknaccfskjcubhjskctwewuteuwrgwd.gcdsjcubgusdwdtikjscdgwudidgujk"]
+        },
+        "request": {
+            "param": ["taskName", "taskDescription", "priority"],
+            "value": ["Do Gym", "Gym at 7:00 am", "High"]
+        },
+        "response": {
+            "param": ["status", "cod", "message"],
+            "value": ["success", 200, "Task Created"]
+        },
+        "project": "5e419dd065703935a468c8e8",
+        "user": "5e42e78a3021783518405404"
+    },
+    {
+        "_id": "5e42b21327f58a26c0259e4b",
+        "name": "Update task",
+        "description": "Update an existing task",
+        "endpoint": "www.https://netlify.com/hjgd775sdd/update_task",
+        "method": "PUT",
+        "header": {
+            "param": ["Content-type", "Authorization"],
+            "value": ["application/json", "Bearer skjflinjlkfsfucisckslc.hawpoiqyriqyrfkvmbavakjeuifknaccfskjcubhjskctwewuteuwrgwd.gcdsjcubgusdwdtikjscdgwudidgujk"]
+        },
+        "request": {
+            "param": ["taskName", "taskDescription", "priority"],
+            "value": ["Go shooping", "Go to market at 9:00 am", "High"]
+        },
+        "response": {
+            "param": ["status", "cod", "message"],
+            "value": ["success", 200, "Task Updated"]
+        },
+        "project": "5e419dd065703935a468c8e8",
+        "user": "5e42e78a3021783518405404"
+    },
+    {
+        "_id": "5e43ceb9c78c4441b4f05d67",
+        "name": "Delete task",
+        "description": "Delete an existing task",
+        "endpoint": "www.https://netlify.com/hjgd775sdd/delete_task",
+        "method": "DELETE",
+        "header": {
+            "param": ["Content-type", "Authorization"],
+            "value": ["application/json", "Bearer skjflinjlkfsfucisckslc.hawpoiqyriqyrfkvmbavakjeuifknaccfskjcubhjskctwewuteuwrgwd.gcdsjcubgusdwdtikjscdgwudidgujk"]
+        },
+        "request": {
+            "param": [],
+            "value": []
+        },
+        "response": {
+            "param": ["status", "cod", "message"],
+            "value": ["success", 200, "Task Deleted"]
+        },
+        "project": "5e419dd065703935a468c8e8",
+        "user": "5e42e78a3021783518405404"
+    }
+]

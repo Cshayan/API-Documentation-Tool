@@ -1,0 +1,16 @@
+[
+    {
+        "_id": "5e42e6d3bde83c3f7c6d13e4",
+        "role": "user",
+        "name": "Shayan Chatterjee",
+        "email": "shayan@gmail.com",
+        "password": "123456"
+    },
+    {
+        "_id": "5e42e78a3021783518405404",
+        "role": "user",
+        "name": "John Doe",
+        "email": "john@gmail.com",
+        "password": "123456"
+    }
+]

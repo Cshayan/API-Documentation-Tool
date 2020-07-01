@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "5e42f5dc48179f3b34ba3978",
+        "name": "Weather App",
+        "description": "A Web App that fetches weather info using some API.",
+        "user": "5e42e6d3bde83c3f7c6d13e4"
+    },
+    {
+        "_id": "5e419d8515067444bcbfd22b",
+        "name": "URL Shortner App",
+        "description": "A Web App which shortens any valid long URL into a corresponding short URL.",
+        "user": "5e42e6d3bde83c3f7c6d13e4"
+    },
+    {
+        "_id": "5e419dd065703935a468c8e8",
+        "name": "Tracker",
+        "description": "A MEAN App that helps in managing our tasks in daily life.",
+        "user": "5e42e78a3021783518405404"
+    } 
+]
